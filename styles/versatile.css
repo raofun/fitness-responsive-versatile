@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 * {
@@ -7,7 +7,9 @@
 }
 
 header {
+    background: #111;
     background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+
 }
 
 
@@ -23,7 +25,7 @@ nav {
 
 .nav-tit {
     color: #E6533C;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 2.25rem;
     font-style: italic;
     font-weight: 800;
@@ -42,7 +44,7 @@ nav {
 
 .items-nav {
     color: #FFF;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 1.1rem;
     font-weight: 400;
 }
@@ -63,9 +65,143 @@ nav {
     height: 24px;
 }
 
+/* Banner Styles */
+.banner {
+    margin: 57px 190px 0px 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-left {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.left-tit {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 4.875rem;
+    font-weight: 900;
+}
+
+.caligraphy {
+    color: #FFF;
+    font-family: "Arizonia";
+    font-size: 4.875rem;
+    font-weight: 400;
+}
+
+.left-des {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btns {
+    display: flex;
+    gap: 14px;
+}
+
+.btn-1 {
+    border: none;
+    width: 224px;
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: #E6533C;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+.btn-2 {
+    width: 224px;
+    padding: 16px 40px;
+    border-radius: 42px;
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+.banner-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 
+.lefty {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 20px;
+    max-width: 206px;
+    /* height: 96px; */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(10px);
+    margin-bottom: -360px;
+    margin-right: -90px;
+}
+
+.round-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+.tutorial {}
+
+.tuto-tit {
+    color: #FAFAF9;
+    font-family: "Inter";
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.tuto-des {
+    color: rgba(239, 237, 232, 0.65);
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.righty {
+    max-width: 193px;
+    padding: 20px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+    margin-top: -250px;
+    margin-left: -120px;
+}
+
+.righty-tit {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.righty-des {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: 1.23rem;
+    font-weight: 400;
+}
 
 
 
@@ -91,8 +227,75 @@ nav {
     .items-nav {
         display: none;
     }
-    .nav-btn{
+
+    .nav-btn {
         display: flex;
         cursor: pointer;
     }
+
+    .banner {
+        flex-direction: column;
+        margin: 51px 20px;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .banner-left {
+        width: 75%;
+    }
+
+    .left-tit {
+        font-size: 2.25rem;
+    }
+
+    .caligraphy {
+        font-size: 2.25rem;
+    }
+    .lefty{
+        margin-bottom: 0px;
+        margin-right: -160px;
+    }
+    .righty{
+        margin-top: -390px;
+        margin-left: -150px;
+    }
+}
+
+
+/* Media query Tablet device */
+@media screen and (min-width: 567px) and (max-width: 992px) {
+    nav {
+        padding: 30px 52px 0px 30px;
+    }
+    .banner {
+        flex-direction: column;
+        margin: 51px 72px;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .banner-left {
+        width: 150%;
+    }
+
+    .left-tit {
+        font-size: 4.8rem;
+    }
+
+    .caligraphy {
+        font-size: 4.8rem;
+    }
+    .banner-right{
+        align-items: center;
+        justify-content: center;
+    }
+    .lefty{
+        margin-bottom: -190px;
+        margin-right: -160px;
+    }
+    .righty{
+        margin-top: -390px;
+        margin-left: -150px;
+    }
+
 }

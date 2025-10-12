@@ -6,12 +6,14 @@
     padding: 0px;
 }
 
-header {
-    background: #111;
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
 
+header {
+    background: linear-gradient(180deg, #111 100%, rgba(119, 119, 119, 0.00) 100%);
 }
 
+main {
+    background: #000000;
+}
 
 
 /* navbar styles */
@@ -203,11 +205,66 @@ nav {
     font-weight: 400;
 }
 
+/* Habits Styles */
+.habit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.habit-tit-des{
+    max-width: 671px;
+}
+.habit-tit {
+    margin-top: 100px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
 
+.habit-des {
+    color: rgba(255, 255, 255, 0.50);
+    /* text-align: center; */
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
 
+.round-hab-card {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 40px;
+}
 
+.hab-card {
+    width: 231px;
+}
 
+.hab-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
 
+.hab-tit {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.hab-des {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
 
 
 
@@ -235,7 +292,7 @@ nav {
 
     .banner {
         flex-direction: column;
-        margin: 51px 20px;
+        margin: 51px 20px 0px 20px;
         align-items: flex-start;
         gap: 48px;
     }
@@ -251,14 +308,28 @@ nav {
     .caligraphy {
         font-size: 2.25rem;
     }
-    .lefty{
+
+    .lefty {
         margin-bottom: 0px;
         margin-right: -160px;
     }
-    .righty{
+
+    .righty {
         margin-top: -390px;
         margin-left: -150px;
     }
+    .round-hab-card{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .habit-tit-des{
+        max-width: 318px;
+    }
+    .habit-tit{
+        margin-top: 15px;
+        font-size: 2rem;
+    }
+
 }
 
 
@@ -267,9 +338,10 @@ nav {
     nav {
         padding: 30px 52px 0px 30px;
     }
+
     .banner {
         flex-direction: column;
-        margin: 51px 72px;
+        /* margin: 51px 72px 0px 72px; */
         align-items: flex-start;
         gap: 48px;
     }
@@ -285,17 +357,28 @@ nav {
     .caligraphy {
         font-size: 4.8rem;
     }
-    .banner-right{
+
+    .banner-right {
         align-items: center;
         justify-content: center;
     }
-    .lefty{
+
+    .lefty {
         margin-bottom: -190px;
         margin-right: -160px;
     }
-    .righty{
+
+    .righty {
         margin-top: -390px;
         margin-left: -150px;
     }
+    .round-hab-card{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .habit-tit-des{
+        max-width: 475px;
+    }
+    
 
 }

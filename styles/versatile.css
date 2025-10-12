@@ -305,10 +305,70 @@ nav {
     border-radius: 18px;
 }
 
+/* Training */
+.training-container {
+    margin: 100px 190px 0px 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+}
 
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    gap: 0px;
 
+}
 
+.ex-1 {
+    width: 323px;
+    background: linear-gradient(0deg, rgba(6, 255, 210, 0.50) 0%, rgba(6, 255, 210, 0.50) 100%), url(../images/exercise1.jpg) lightgray 50% / cover no-repeat;
+}
 
+.ex-2 {
+    width: 519px;
+    margin-left: -130px;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.30) 0%, rgba(255, 0, 0, 0.30) 100%), url(../images/exercise2.png) lightgray -0.336px 0px / 100.125% 111.811% no-repeat;
+}
+
+.ex-3 {
+    width: 368px;
+    margin-left: -58px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../images/exercise3.png) lightgray 50% / cover no-repeat;
+}
+
+.ex-4 {
+    width: 415px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../images/exercise4.png) lightgray 50% / cover no-repeat;
+}
+
+.ex-5 {
+    width: 388px;
+    margin-left: -25px;
+    background: linear-gradient(0deg, rgba(66, 255, 0, 0.30) 0%, rgba(66, 255, 0, 0.30) 100%), url(../images/exercise5.jpg) lightgray 50% / cover no-repeat;
+}
+
+.ex-6 {
+    width: 356px;
+    margin-left: -47px;
+    background: linear-gradient(0deg, rgba(0, 71, 255, 0.30) 0%, rgba(0, 71, 255, 0.30) 100%), url(../images/exercise6.jpg) lightgray 50% / cover no-repeat;
+}
+
+.img-lala {
+    /* width: 380px; */
+    height: 220px;
+}
+
+.text-3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 20px;
+}
+
+/* BMI Calculator*/
 
 
 
@@ -385,18 +445,56 @@ nav {
         flex-direction: column;
         gap: 31px;
     }
+
     /* .run-left{
         max-width: 287px;
     } */
-     .run-right img{
+    .run-right img {
         max-width: 287px;
         border-radius: 18px;
-     }
+    }
 
     .section-tit {
         font-size: 2rem;
     }
+     .training-container {
+        margin: 20px;
+    }
 
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ex-1 {
+        width: 183px;
+    }
+
+    .ex-2 {
+        width: 219px;
+        margin-left: -86px;
+    }
+
+    .ex-3 {
+        display: none;
+    }
+
+    .ex-4 {
+        width: 205px;
+        
+    }
+
+    .ex-5 {
+        width: 158px;
+        margin-left: -25px;
+       
+    }
+
+    .ex-6 {
+       display: none;
+    }
+    .img-lala{
+        height: 120px;
+    }
 
 }
 
@@ -462,5 +560,44 @@ nav {
         font-size: 2.2rem;
     }
 
+    .training-container {
+        margin: 20px;
+    }
+
+    .images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ex-1 {
+        width: 183px;
+       
+    }
+
+    .ex-2 {
+        width: 379px;
+        margin-left: -130px;
+    }
+
+    .ex-3 {
+        width: 228px;
+        margin-left: -58px;
+    }
+
+    .ex-4 {
+        width: 275px;
+        
+    }
+
+    .ex-5 {
+        width: 228px;
+        margin-left: -25px;
+       
+    }
+
+    .ex-6 {
+        width: 216px;
+        margin-left: -47px;
+        
+    }
 
 }

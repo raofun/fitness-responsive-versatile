@@ -43,6 +43,12 @@ main {
     border-radius: 42px;
     background: #E6533C;
     border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+
 }
 
 /* navbar styles */
@@ -147,6 +153,7 @@ nav {
     font-size: 1.125rem;
     font-family: "Inter";
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn-2 {
@@ -159,6 +166,7 @@ nav {
     font-size: 1.125rem;
     font-family: "Inter";
     font-weight: 600;
+    cursor: pointer;
 }
 
 .banner-right {
@@ -369,6 +377,95 @@ nav {
 }
 
 /* BMI Calculator*/
+.bmi-calc-title {
+    margin: 88px 190px 88px 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BMI Calculator Form */
+.BMI-form {
+    background: #222;
+}
+
+.bmi-form-container {
+    margin: 0px 190px 0px 190px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bmi-tit {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.bmi-left {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    justify-content: center;
+}
+
+table {
+    border: 1px dotted rgba(255, 255, 255, 0.10);
+    border-collapse: collapse;
+    width: 55%;
+}
+
+th {
+    border: 1px dotted rgba(255, 255, 255, 0.10);
+    padding: 12px 19px;
+    text-align: left;
+    color: #FFF;
+}
+
+td {
+    border: 1px dotted rgba(255, 255, 255, 0.10);
+    padding: 12px 19px;
+    text-align: left;
+    color: #FFF;
+    opacity: 50%;
+}
+
+.bmi-right {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    justify-content: center;
+}
+
+.height-weight {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.imput-fld {
+    padding: 12px 40px 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    width: 100%;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+select {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 
 
@@ -446,9 +543,6 @@ nav {
         gap: 31px;
     }
 
-    /* .run-left{
-        max-width: 287px;
-    } */
     .run-right img {
         max-width: 287px;
         border-radius: 18px;
@@ -457,8 +551,9 @@ nav {
     .section-tit {
         font-size: 2rem;
     }
-     .training-container {
-        margin: 20px;
+
+    .training-container {
+        margin: 20px 20px 0px 20px;
     }
 
     .images {
@@ -480,20 +575,33 @@ nav {
 
     .ex-4 {
         width: 205px;
-        
+
     }
 
     .ex-5 {
         width: 158px;
         margin-left: -25px;
-       
     }
 
     .ex-6 {
-       display: none;
+        display: none;
     }
-    .img-lala{
+
+    .img-lala {
         height: 120px;
+    }
+
+    .bmi-calc-title {
+        margin: 20px;
+    }
+    .bmi-form-container{
+        margin: 20px 20px 0px 20px;
+        grid-template-columns: 1fr;
+        padding: 34px 20px 43px 20px;
+        gap: 42px;
+    }
+    table{
+        width: 100%;
     }
 
 }
@@ -561,7 +669,7 @@ nav {
     }
 
     .training-container {
-        margin: 20px;
+        margin: 20px 20px 0px 20px;
     }
 
     .images {
@@ -570,7 +678,7 @@ nav {
 
     .ex-1 {
         width: 183px;
-       
+
     }
 
     .ex-2 {
@@ -585,19 +693,28 @@ nav {
 
     .ex-4 {
         width: 275px;
-        
+
     }
 
     .ex-5 {
         width: 228px;
         margin-left: -25px;
-       
+
     }
 
     .ex-6 {
         width: 216px;
         margin-left: -47px;
-        
+
+    }
+    .bmi-form-container{
+        margin: 20px 20px 0px 20px;
+        grid-template-columns: 1fr;
+        padding: 34px 20px 43px 20px;
+        gap: 42px;
+    }
+    table{
+        width: 100%;
     }
 
 }

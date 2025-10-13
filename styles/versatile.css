@@ -466,10 +466,88 @@ select {
     font-weight: 400;
 }
 
+.team-container {
+    margin: 88px 190px 0px 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 58px;
+}
 
+.text-aling {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 
+.team-img {
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
+.img-tit {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-left: 19px;
+}
 
+.img-des {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 19px;
+    margin-bottom: 16px;
+}
+
+.img-box-1 {
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer1.png) lightgray 50% / cover no-repeat;
+    height: 272px;
+    width: 100%;
+}
+
+.img-box-2 {
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer2.png) lightgray 50% / cover no-repeat;
+    height: 272px;
+    width: 100%;
+}
+
+.img-box-3 {
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer3.png) lightgray 50% / cover no-repeat;
+    height: 272px;
+    width: 100%;
+}
+
+.img-box-4 {
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer4.png) lightgray 50% / cover no-repeat;
+    height: 272px;
+    width: 100%;
+}
+
+.img-box-5 {
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer5.png) lightgray 50% / cover no-repeat;
+    height: 272px;
+}
+
+.img-box-6 {
+    border-radius: 18px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer6.png) lightgray 50% / cover no-repeat;
+    height: 272px;
+}
 
 
 /* Media query Mobile */
@@ -594,14 +672,23 @@ select {
     .bmi-calc-title {
         margin: 20px;
     }
-    .bmi-form-container{
+
+    .bmi-form-container {
         margin: 20px 20px 0px 20px;
         grid-template-columns: 1fr;
         padding: 34px 20px 43px 20px;
         gap: 42px;
     }
-    table{
+
+    table {
         width: 100%;
+    }
+    .team-container{
+        margin: 40px 20px 0px 20px;
+        gap: 37px;
+    }
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
@@ -707,14 +794,20 @@ select {
         margin-left: -47px;
 
     }
-    .bmi-form-container{
+
+    .bmi-form-container {
         margin: 20px 20px 0px 20px;
         grid-template-columns: 1fr;
         padding: 34px 20px 43px 20px;
         gap: 42px;
     }
-    table{
+
+    table {
         width: 100%;
+    }
+    .team-container{
+        margin: 40px 20px 0px 20px;
+        gap: 54px;
     }
 
 }

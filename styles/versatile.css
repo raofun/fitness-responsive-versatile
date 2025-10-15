@@ -12,7 +12,8 @@ header {
     background: linear-gradient(180deg, #111 100%, rgba(119, 119, 119, 0.00) 100%);
 }
 
-main {
+main,
+footer {
     background: #000000;
 }
 
@@ -473,6 +474,7 @@ select {
     align-items: center;
     text-align: center;
     gap: 58px;
+    padding-bottom: 88px;
 }
 
 .text-aling {
@@ -548,6 +550,101 @@ select {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/trainer6.png) lightgray 50% / cover no-repeat;
     height: 272px;
 }
+
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 66px 190px 35px 190px;/
+}
+
+.foot-upper {
+    display: flex;
+    gap: 102px;
+
+}
+
+.foot-tit {
+    color: #E6533C;
+    font-family: Inter;
+    font-size: 4.375rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.foot-des {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    max-width: 443px;
+}
+
+.right-f {
+    display: flex;
+    gap: 152px;
+    margin-bottom: 79px;
+}
+
+.middle-right-f {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.strtd {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.get-strtd {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.strtd-itm {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.hir {
+    height: 2px;
+    border: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.10);
+    margin-bottom: 35px;
+}
+
+.reserved {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+.foot-lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
 
 
 /* Media query Mobile */
@@ -683,12 +780,27 @@ select {
     table {
         width: 100%;
     }
-    .team-container{
+
+    .team-container {
         margin: 40px 20px 0px 20px;
         gap: 37px;
+        padding-bottom: 30px;
     }
-    .team-img{
+
+    .team-img {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .foot-container {
+        padding: 40px 20px 30px 20px;
+        align-items: flex-start;
+    }
+    .foot-upper {
+        flex-direction: column;
+    }
+    .right-f {
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
@@ -805,9 +917,20 @@ select {
     table {
         width: 100%;
     }
-    .team-container{
+
+    .team-container {
         margin: 40px 20px 0px 20px;
         gap: 54px;
+        padding-bottom: 40px;
+    }
+
+    .foot-container {
+        padding: 40px 20px 30px 20px;
+        align-items: flex-start;
+    }
+
+    .foot-upper {
+        flex-direction: column;
     }
 
 }
